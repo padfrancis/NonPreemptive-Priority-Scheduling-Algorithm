@@ -1,34 +1,125 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-  }
-  
-  .form-section {
-    margin-bottom: 30px;
-  }
-  
-  .add-patient-table td {
-    padding: 6px;
-    vertical-align: middle;
-  }
-  
-  .schedule-table,
-  .schedule-table th,
-  .schedule-table td {
-    border: 1px solid #ddd;
-    border-collapse: collapse;
-    padding: 8px;
-  }
-  
-  .schedule-table th {
-    background-color: #f2f2f2;
-  }
-  
-  .chart-section {
-    margin-top: 30px;
-  }
-  
-  #ganttChart {
-    border: 1px solid #ccc;
-  }
-  
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  color: #333;
+  line-height: 1.5;
+}
+
+h1, h2, h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.patient-input, 
+.current-patients {
+  flex: 1 1 300px;
+  box-sizing: border-box;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 20px;
+}
+
+.patient-input {
+  max-width: 550px;
+}
+
+.current-patients {
+  max-width: 600px;
+}
+
+table.add-patient-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table.add-patient-table td {
+  padding: 6px;
+  vertical-align: middle;
+  width: 50%;
+}
+
+.schedule-section, 
+.chart-section {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+table.schedule-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+table.schedule-table th {
+  background-color: #f2f2f2;
+  padding: 10px;
+  font-weight: 600;
+  text-align: left;
+}
+
+table.schedule-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+table.schedule-table tr:hover {
+  background-color: #fafafa;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin-right: 10px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:focus {
+  outline: none;
+}
+
+form {
+  margin: 0;
+  padding: 0;
+}
+
+.patient-input, 
+.current-patients, 
+.schedule-section, 
+.chart-section {
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#ganttChart {
+  border: 1px solid #ccc;
+  display: block;
+  margin-top: 15px;
+}
+
+.schedule-section h2, 
+.chart-section h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}

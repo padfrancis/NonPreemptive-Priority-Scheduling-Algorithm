@@ -7,7 +7,7 @@ function createGanttChart(canvasId, ganttData, xMax) {
         datasets: [{
           label: 'Gantt Blocks',
           data: ganttData.map(block => ({
-            x: (block.start + block.finish) / 2, // midpoint
+            x: (block.start + block.finish) / 2,
             name: block.name,
             start: block.start,
             finish: block.finish
@@ -63,8 +63,7 @@ function createGanttChart(canvasId, ganttData, xMax) {
               const fullHeight = chartArea.bottom - chartArea.top;
               const barHeight  = fullHeight * 0.6;
               const yTop = chartArea.top + (fullHeight - barHeight) / 2;
-  
-              // Choose color or pattern
+
               if (blockName === 'Idle') {
                 // hashed pattern
                 const patternCanvas = document.createElement('canvas');
@@ -86,11 +85,9 @@ function createGanttChart(canvasId, ganttData, xMax) {
               const width = xEnd - xStart;
               ctx.fillRect(xStart, yTop, width, barHeight);
   
-              // Outline
               ctx.strokeStyle = '#333';
               ctx.strokeRect(xStart, yTop, width, barHeight);
   
-              // Text label if it fits
               ctx.fillStyle = '#000';
               ctx.font = '12px sans-serif';
               const text = blockName;
