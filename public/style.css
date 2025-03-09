@@ -1,0 +1,34 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  
+  .form-section {
+    margin-bottom: 30px;
+  }
+  
+  .add-patient-table td {
+    padding: 6px;
+    vertical-align: middle;
+  }
+  
+  .schedule-table,
+  .schedule-table th,
+  .schedule-table td {
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+    padding: 8px;
+  }
+  
+  .schedule-table th {
+    background-color: #f2f2f2;
+  }
+  
+  .chart-section {
+    margin-top: 30px;
+  }
+  
+  #ganttChart {
+    border: 1px solid #ccc;
+  }
+  
