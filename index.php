@@ -129,7 +129,7 @@ if ($doCompute && !empty($_SESSION['patients'])) {
 </div>
 
 <div class="chart-section">
-    <h2>Gantt Chart (Single Row + Idle Times)</h2>
+    <h2>Gantt Chart</h2>
     <canvas id="ganttChart" width="900" height="200"></canvas>
 </div>
 
