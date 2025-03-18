@@ -33,7 +33,7 @@ if ($doCompute && !empty($_SESSION['patients'])) {
     <meta charset="UTF-8">
     <title>ER Triage System</title>
     <link rel="stylesheet" href="public/style.css">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../nps/public/chart.js"></script>
 </head>
 <body>
 <h1>ER Triage System (Non-Preemptive Priority)</h1>
